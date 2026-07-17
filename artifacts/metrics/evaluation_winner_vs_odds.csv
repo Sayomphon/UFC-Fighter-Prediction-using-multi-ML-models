@@ -1,0 +1,6 @@
+Model,n,Accuracy,Log Loss,Brier,ROC-AUC,ECE
+Sportsbook odds (vig removed),229,0.7074,0.588,0.2011,0.7596,0.0508
+Logistic Regression,229,0.6769,0.5838,0.2005,0.7774,0.0829
+Random Forest,229,0.6943,0.5932,0.2033,0.769,0.0753
+CatBoost (Main params),229,0.7118,0.5748,0.1959,0.7828,0.0767
+CatBoost + sigmoid calibration,229,0.6856,0.5866,0.2004,0.7807,0.0942

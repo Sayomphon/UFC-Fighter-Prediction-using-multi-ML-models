@@ -1,0 +1,3 @@
+Model,n,Accuracy,Macro F1,Weighted F1,Log Loss
+Baseline: class prior,326,0.589,0.1483,0.4366,1.1667
+Random Forest (Main params),326,0.5828,0.2247,0.5062,1.1161

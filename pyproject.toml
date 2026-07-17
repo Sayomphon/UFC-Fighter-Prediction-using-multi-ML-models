@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ufc-fighter-prediction"
+version = "0.1.0"
+description = "Leakage-aware UFC fight outcome modeling and evaluation"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+dependencies = [
+  "catboost>=1.2,<2",
+  "matplotlib>=3.7,<4",
+  "numpy>=1.24,<3",
+  "pandas>=2,<3",
+  "scikit-learn>=1.3,<2",
+]
+
+[project.optional-dependencies]
+notebooks = [
+  "jupyterlab>=4,<5",
+  "seaborn>=0.13,<1",
+  "xgboost>=2,<4",
+]
+deep-learning = ["tensorflow>=2.15,<3"]
+test = ["pytest>=8,<9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
