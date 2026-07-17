@@ -1,0 +1,3 @@
+Model,n,Accuracy,Macro F1,Log Loss
+Baseline: class prior,138,0.4783,0.2157,1.0385
+CatBoost (+balanced weights),138,0.4348,0.3607,1.0753
